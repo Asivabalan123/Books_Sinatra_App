@@ -1,0 +1,9 @@
+<h1>Welcome to Books page!</h1>
+<% @books.each do |books| %>
+<div>
+  <h2><a href="/<%= books.id%>"><%= books.author%></a></h2>
+
+  <p><%= books.description%><p>
+
+</div>
+<% end %>
